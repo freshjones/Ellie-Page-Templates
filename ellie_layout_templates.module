@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Ellie Layout Templates feature.
+ */
+
+include_once 'ellie_layout_templates.features.inc';
