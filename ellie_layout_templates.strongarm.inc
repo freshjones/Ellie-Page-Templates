@@ -11,8 +11,9 @@ function ellie_layout_templates_strongarm() {
 
   $export = array();
 
-  $siteTemplateVariants = _set_default_site_templates();
   /*
+  $siteTemplateVariants = _set_default_site_templates();
+
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; 
   $strongarm->api_version = 1;
@@ -20,6 +21,7 @@ function ellie_layout_templates_strongarm() {
   $strongarm->value = $siteTemplateVariants; 
   $export['default_page_manager_handlers'] = $strongarm;
   */
+
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
