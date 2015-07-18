@@ -12,7 +12,7 @@ function ellie_layout_templates_default_page_manager_handlers() {
   $export = array();
 
   $handler = new stdClass();
-  $handler->disabled = TRUE; /* Edit this to true to make a default handler disabled initially */
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
   $handler->name = 'site_template__agency-three';
   $handler->task = 'site_template';
@@ -94,7 +94,7 @@ function ellie_layout_templates_default_page_manager_handlers() {
   $export['site_template__agency-three'] = $handler;
 
   $handler = new stdClass();
-  $handler->disabled = TRUE; /* Edit this to true to make a default handler disabled initially */
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
   $handler->name = 'site_template__agency-two';
   $handler->task = 'site_template';
@@ -178,7 +178,7 @@ function ellie_layout_templates_default_page_manager_handlers() {
   $export['site_template__agency-two'] = $handler;
 
   $handler = new stdClass();
-  $handler->disabled = TRUE; /* Edit this to true to make a default handler disabled initially */
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
   $handler->name = 'site_template__agency-one';
   $handler->task = 'site_template';
