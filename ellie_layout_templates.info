@@ -9,6 +9,6 @@ features[ctools][] = page_manager:pages_default:1
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 features[page_manager_handlers][] = site_template__agency-one
-features[page_manager_handlers][] = site_template__agency-two
 features[page_manager_handlers][] = site_template__agency-three
+features[page_manager_handlers][] = site_template__agency-two
 features[variable][] = panels_everywhere_site_template_enabled

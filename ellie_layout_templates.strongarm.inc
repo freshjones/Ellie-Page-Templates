@@ -8,7 +8,6 @@
  * Implements hook_strongarm().
  */
 function ellie_layout_templates_strongarm() {
-
   $export = array();
 
   $strongarm = new stdClass();
@@ -19,5 +18,4 @@ function ellie_layout_templates_strongarm() {
   $export['panels_everywhere_site_template_enabled'] = $strongarm;
 
   return $export;
-
 }
