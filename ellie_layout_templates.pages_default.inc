@@ -15,7 +15,7 @@ function ellie_layout_templates_default_page_manager_handlers()
   $handler = new stdClass();
   $handler->disabled = TRUE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
-  $handler->name = 'site_template__agency-one';
+  $handler->name = 'site_template__agency_one';
   $handler->task = 'site_template';
   $handler->subtask = '';
   $handler->handler = 'panel_context';
@@ -30,7 +30,7 @@ function ellie_layout_templates_default_page_manager_handlers()
     'css' => '',
     'contexts' => array(),
     'relationships' => array(),
-    'name' => 'agency-one',
+    'name' => 'agency_one',
   );
 
   $display = new panels_display();
@@ -100,7 +100,7 @@ function ellie_layout_templates_default_page_manager_handlers()
 
   $handler->conf['display'] = $display;
 
-  $export['site_template__agency-one'] = $handler;
+  $export['site_template__agency_one'] = $handler;
 
   return $export;
 
