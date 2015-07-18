@@ -11,9 +11,8 @@ function ellie_layout_templates_strongarm() {
 
   $export = array();
 
+  /* set up the default site_template handlers */
   /*
-  $siteTemplateVariants = _set_default_site_templates();
-
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; 
   $strongarm->api_version = 1;
@@ -32,27 +31,3 @@ function ellie_layout_templates_strongarm() {
   return $export;
 
 }
-
-/*
-function _set_default_site_templates() 
-{
-
-  $variant_prefix = 'site_template__agency';
-  //$variants = array('one','two','three');
-  $variants = array('one',);
-
-  $selectedVariant = 'one';
-
-  $defaultHandlers = array();
-
-  foreach($variants AS $variant)
-  {
-    $defaultHandlers[$variant_prefix . '_' . $variant] = TRUE;
-  }
-
-  $defaultHandlers[$variant_prefix . '_' . $selectedVariant] = FALSE;
-
-  return $defaultHandlers;
-
-}
-*/
