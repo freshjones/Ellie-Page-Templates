@@ -183,27 +183,29 @@ function ellie_layout_templates_default_page_manager_handlers() {
   $handler->handler = 'panel_context';
   $handler->weight = 1;
   $handler->conf = array(
-    'title' => 'Agency Two',
-    'no_blocks' => 1,
-    'pipeline' => 'standard',
-    'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
-    'css_id' => '',
-    'css' => '',
-    'contexts' => array(),
-    'relationships' => array(),
-    'name' => 'agency-two',
+      'title' => 'Agency Two',
+      'no_blocks' => 1,
+      'pipeline' => 'standard',
+      'body_classes_to_remove' => '',
+      'body_classes_to_add' => '',
+      'css_id' => '',
+      'css' => '',
+      'contexts' => array(),
+      'relationships' => array(),
+      'name' => 'agency-two',
   );
   $display = new panels_display();
-  $display->layout = 'twocol';
+  $display->layout = 'threecol_25_50_25_stacked';
   $display->layout_settings = array();
   $display->panel_settings = array(
-    'style_settings' => array(
-      'default' => NULL,
-      'middle' => NULL,
-      'left' => NULL,
-      'right' => NULL,
-    ),
+      'style_settings' => array(
+          'default' => NULL,
+          'middle' => NULL,
+          'left' => NULL,
+          'right' => NULL,
+          'top' => NULL,
+          'bottom' => NULL,
+      ),
   );
   $display->cache = array();
   $display->title = '';
@@ -218,14 +220,14 @@ function ellie_layout_templates_default_page_manager_handlers() {
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
-    'context' => 'argument_page_content_1',
-    'override_title' => 0,
-    'override_title_text' => '',
-    'override_title_heading' => 'h2',
+      'context' => 'argument_page_content_1',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
   );
   $pane->cache = array();
   $pane->style = array(
-    'settings' => NULL,
+      'settings' => NULL,
   );
   $pane->css = array();
   $pane->extras = array();
@@ -244,7 +246,7 @@ function ellie_layout_templates_default_page_manager_handlers() {
   $pane->configuration = array();
   $pane->cache = array();
   $pane->style = array(
-    'settings' => NULL,
+      'settings' => NULL,
   );
   $pane->css = array();
   $pane->extras = array();
@@ -253,6 +255,29 @@ function ellie_layout_templates_default_page_manager_handlers() {
   $pane->uuid = '3342666f-9ac1-4ffa-a381-8bfdf1e0cd3c';
   $display->content['new-3342666f-9ac1-4ffa-a381-8bfdf1e0cd3c'] = $pane;
   $display->panels['right'][0] = 'new-3342666f-9ac1-4ffa-a381-8bfdf1e0cd3c';
+  $pane = new stdClass();
+  $pane->pid = 'new-70dd77e1-8f8e-469a-9e64-e04c0020f3b3';
+  $pane->panel = 'top';
+  $pane->type = 'block';
+  $pane->subtype = 'system-main-menu';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+      'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = '70dd77e1-8f8e-469a-9e64-e04c0020f3b3';
+  $display->content['new-70dd77e1-8f8e-469a-9e64-e04c0020f3b3'] = $pane;
+  $display->panels['top'][0] = 'new-70dd77e1-8f8e-469a-9e64-e04c0020f3b3';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-3342666f-9ac1-4ffa-a381-8bfdf1e0cd3c';
   $handler->conf['display'] = $display;
